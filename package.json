@@ -2,8 +2,7 @@
   "name": "ng-input-enhancer",
   "version": "0.0.1",
   "description": "Angular2 Input Enhancer Component",
-  "main": "bundles/ng-input-enhancer.umd.js",
-  "typings": "src/ng-input-enhancer.ts",
+  "main": "index.ts",
   "scripts": {
     "transpile": "ngc",
     "package": "rollup -c",
