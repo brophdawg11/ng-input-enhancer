@@ -1,0 +1,32 @@
+{
+  "name": "ng-input-enhancer",
+  "version": "0.0.1",
+  "description": "Angular2 Input Enhancer Component",
+  "main": "bundles/ng-input-enhancer.umd.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brophdawg11/ng-input-enhancer.git"
+  },
+  "keywords": [
+    "angular2",
+    "input",
+    "enhancer",
+    "forms",
+    "reactive"
+  ],
+  "author": "matt@brophy.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brophdawg11/ng-input-enhancer/issues"
+  },
+  "homepage": "https://github.com/brophdawg11/ng-input-enhancer#readme",
+  "peerDependencies": {
+    "@angular/common": "2.4.7",
+    "@angular/core": "2.4.7",
+    "@angular/forms": "2.4.7",
+    "rxjs": "5.1.0",
+    "zone.js": "0.7.6"
+  }
+}

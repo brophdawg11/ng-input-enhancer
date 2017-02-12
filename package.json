@@ -1,0 +1,53 @@
+{
+  "name": "ng-input-enhancer",
+  "version": "0.0.1",
+  "description": "Angular2 Input Enhancer Component",
+  "main": "bundles/ng-input-enhancer.umd.js",
+  "typings": "src/ng-input-enhancer.ts",
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/ng-input-enhancer.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng-input-enhancer.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify && cp package.dist.json dist/package.json",
+    "clean": "rm -rf dist/*",
+    "rebuild": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brophdawg11/ng-input-enhancer.git"
+  },
+  "keywords": [
+    "angular2",
+    "input",
+    "enhancer",
+    "forms",
+    "reactive"
+  ],
+  "author": "matt@brophy.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brophdawg11/ng-input-enhancer/issues"
+  },
+  "homepage": "https://github.com/brophdawg11/ng-input-enhancer#readme",
+  "dependencies": {
+    "@angular/common": "2.4.7",
+    "@angular/compiler": "2.4.7",
+    "@angular/compiler-cli": "2.4.7",
+    "@angular/core": "2.4.7",
+    "@angular/forms": "2.4.7",
+    "awesome-typescript-loader": "3.0.4-rc.0",
+    "core-js": "2.4.1",
+    "rxjs": "5.1.0",
+    "tslint": "4.4.2",
+    "tslint-eslint-rules": "3.3.0",
+    "tslint-loader": "3.3.0",
+    "webpack": "2.2.1",
+    "zone.js": "0.7.6"
+  },
+  "devDependencies": {
+    "rollup": "0.41.4",
+    "typescript": "2.1.6",
+    "uglify-js": "2.7.5"
+  }
+}
